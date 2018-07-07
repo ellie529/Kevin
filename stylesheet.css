@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+}
+h1 {
+    font-family: Bookman Old Style;
+    font-size: 3.75em;
+    text-align: center;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-width: 1em;
+    border-color: cornflowerblue;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+    margin: 0;
+}
+img {
+    padding-left: 40%;
+    padding-top: 1em;
+}

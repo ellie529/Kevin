@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>For Kevin</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script type="text/javascript">
+            var picPaths = ['ellie1.png','ellie2.png','ellie3.png','ellie4.png','ellie5.png'];
+            var curPic = -1;
+            //preload the images for smooth animation
+            var imgO = new Array();
+            for(i=0; i < picPaths.length; i++) {
+                imgO[i] = new Image();
+                imgO[i].src = picPaths[i];
+            }
+
+            function swapImage() {
+                curPic = (++curPic > picPaths.length-1)? 0 : curPic;
+                imgCont.src = imgO[curPic].src;
+                setTimeout(swapImage,500);
+            }
+
+            window.onload=function() {
+                imgCont = document.getElementById('imgBanner');
+                swapImage();
+            }
+        </script>
+</head>
+<body>
+    <h1>&#9825; &#9825; &#9825; &#9825; &Escr;<small><small>llie</small></small> &Lscr;<small><small>oves</small></small> &Kscr;<small><small>evin</small></small> &Fscr;<small><small>orever</small></small> &#9825; &#9825; &#9825; &#9825;</h1>
+    <img id="imgBanner" src="ellie1.png">
+</body>
+</html>
